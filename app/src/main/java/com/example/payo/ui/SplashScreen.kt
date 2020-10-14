@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import com.example.payo.R
-import com.example.payo.ui.Login.LoginActivity
+import com.example.payo.ui.SignUp.SignUpActivity
 
 class SplashScreen : AppCompatActivity() {
 
@@ -23,7 +23,7 @@ class SplashScreen : AppCompatActivity() {
 
 
         mRunnable = Runnable {
-            startActivity(Intent(this, LoginActivity::class.java))
+            startActivity(Intent(this, SignUpActivity::class.java))
             finish()
         }
 
