@@ -8,6 +8,17 @@ import com.example.payo.Remote.RetroClass
 
 class HomeViewModel : ViewModel() {
 
+    private lateinit var values : List<MainData>
+    private val retroClass = RetroClass()
+
+    fun getListData(){
+
+        return retroClass.getData { isSuccess, response ->
+            response!!.data
+        }
+    }
+
+
     var data = MutableLiveData<List<MainData>>().apply {
         val retroClass = RetroClass()
         retroClass.getData{ isSuccess, response ->

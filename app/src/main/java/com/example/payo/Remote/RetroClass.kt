@@ -1,8 +1,6 @@
 package com.example.payo.Remote
 
 import android.util.Log
-import android.widget.Toast
-import com.example.payo.DataModel.MainData
 import com.example.payo.DataModel.PayoData
 import retrofit2.Call
 import retrofit2.Callback
